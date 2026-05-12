@@ -85,9 +85,9 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 
 # 📁 Documentación
 
-📄 Memoria TFG Documentación técnica completa: diseño, implementación y justificación
+[📄 Memoria TFG](./Documentación/Memoria_TFG_Final.pdf) Documentación técnica completa: diseño, implementación y justificación
 
-📎 Anexo Configuraciones detalladas, capturas de pantalla y evidencias
+[📎 Anexo](./Documentación/Anexo_Capturas_Tfg.pdf) Configuraciones detalladas, capturas de pantalla y evidencias
 
 # 💡 Decisiones de Diseño y Aprendizajes
 
