@@ -99,9 +99,12 @@ Wazuh es una plataforma open source con capacidades comparables a soluciones ent
 
 # ¿Qué haría diferente en producción real?
 
-Añadiría autenticación multifactor (MFA) para el acceso a VLAN_Admin
-Implementaría logs centralizados con retención mínima de 90 días para cumplimiento normativo (ENS, ISO 27001)
-Separaría la VLAN de gestión de Wazuh en una red out-of-band dedicada
-Consideraría pfSense en alta disponibilidad (HA) con CARP para eliminar el punto único de fallo
+-Añadiría autenticación multifactor (MFA) para el acceso a VLAN_Admin
+
+-Implementaría logs centralizados con retención mínima de 90 días para cumplimiento normativo (ENS, ISO 27001)
+
+-Separaría la VLAN de gestión de Wazuh en una red out-of-band dedicada
+
+-Consideraría pfSense en alta disponibilidad (HA) con CARP para eliminar el punto único de fallo
 
 
