@@ -81,4 +81,9 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 | Detección malware   | YARA            | ✅ Detectado y alertado   | Tiempo real       |
 | Análisis VirusTotal | API VirusTotal  | ✅ Hash consultado        | Tiempo real       |
 
+# 📁 Documentación
+Documento Descripción
+📄 Memoria TFGDocumentación técnica completa: diseño, implementación y justificación
+📎 AnexoConfiguraciones detalladas, capturas de pantalla y evidencias
+
 
