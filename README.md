@@ -89,7 +89,7 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 
 # 💡 Decisiones de Diseño y Aprendizajes
 
-¿Por qué doble firewall en lugar de uno?
+# ¿Por qué doble firewall en lugar de uno?
 
 Un único firewall creando la DMZ con tres interfaces es la solución más común y económica, pero presenta un punto único de fallo: si el firewall se ve comprometido, el atacante tiene acceso directo tanto a la DMZ como a la red interna. La arquitectura de doble firewall añade una capa adicional: aunque el FW-Externo sea vulnerado, el FW-Interno actúa como segunda barrera antes de llegar a los sistemas críticos.
 
