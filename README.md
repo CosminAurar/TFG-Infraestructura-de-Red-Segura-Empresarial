@@ -82,7 +82,6 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 | Análisis VirusTotal | API VirusTotal  | ✅ Hash consultado        | Tiempo real       |
 
 # 📁 Documentación
-Documento Descripción
 
 📄 Memoria TFG Documentación técnica completa: diseño, implementación y justificación
 
