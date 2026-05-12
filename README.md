@@ -87,4 +87,18 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 
 📎 Anexo Configuraciones detalladas, capturas de pantalla y evidencias
 
+# 💡 Decisiones de Diseño y Aprendizajes
+
+¿Por qué doble firewall en lugar de uno?
+Un único firewall creando la DMZ con tres interfaces es la solución más común y económica, pero presenta un punto único de fallo: si el firewall se ve comprometido, el atacante tiene acceso directo tanto a la DMZ como a la red interna. La arquitectura de doble firewall añade una capa adicional: aunque el FW-Externo sea vulnerado, el FW-Interno actúa como segunda barrera antes de llegar a los sistemas críticos.
+
+¿Por qué Wazuh como SIEM?
+Wazuh es una plataforma open source con capacidades comparables a soluciones enterprise (Splunk, IBM QRadar) sin coste de licencia. La integración nativa con YARA y la API de VirusTotal permite detección de malware en tiempo real sin infraestructura adicional. Para un entorno con 75 usuarios es una elección realista y escalable.
+¿Qué haría diferente en producción real?
+
+Añadiría autenticación multifactor (MFA) para el acceso a VLAN_Admin
+Implementaría logs centralizados con retención mínima de 90 días para cumplimiento normativo (ENS, ISO 27001)
+Separaría la VLAN de gestión de Wazuh en una red out-of-band dedicada
+Consideraría pfSense en alta disponibilidad (HA) con CARP para eliminar el punto único de fallo
+
 
