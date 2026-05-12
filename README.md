@@ -10,11 +10,17 @@ DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualiz
 
 
 -Implementar una arquitectura de doble firewall con zona DMZ
+
 -Segmentar la red interna mediante VLANs departamentales
+
 -Desplegar un directorio activo corporativo con Samba AD
+
 -Configurar un sistema IDS/IPS con reglas personalizadas
+
 -Implementar un SIEM centralizado con detección de malware
+
 -Verificar la seguridad mediante pruebas de ataque controladas
+
 
 # 🛠️ Stack Tecnológico
 
