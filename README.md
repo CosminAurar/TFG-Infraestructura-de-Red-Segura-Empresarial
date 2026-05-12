@@ -3,7 +3,9 @@
 # 📋 Descripción
 Diseño e implementación completa de una infraestructura de red segura para la empresa ficticia TechSolutions SL, una consultora IT con 75 empleados. El entorno fue desplegado íntegramente en VirtualBox, demostrando la viabilidad de construir una arquitectura de seguridad empresarial robusta sin hardware físico dedicado.
 
-⚠️ Aviso Legal y Ético
+
+# ⚠️ Aviso Legal y Ético
+
 DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualizado controlado con fines exclusivamente educativos. Las pruebas de ataque realizadas desde Kali Linux se ejecutaron únicamente contra sistemas propios del laboratorio, nunca contra infraestructuras reales o de terceros.
 
 # 🎯 Objetivos del Proyecto
