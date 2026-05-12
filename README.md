@@ -2,10 +2,12 @@
 
 # 📋 Descripción
 Diseño e implementación completa de una infraestructura de red segura para la empresa ficticia TechSolutions SL, una consultora IT con 75 empleados. El entorno fue desplegado íntegramente en VirtualBox, demostrando la viabilidad de construir una arquitectura de seguridad empresarial robusta sin hardware físico dedicado.
+
 ⚠️ Aviso Legal y Ético
 DECLARACIÓN DE USO ÉTICO: Este proyecto se desarrolló en un entorno virtualizado controlado con fines exclusivamente educativos. Las pruebas de ataque realizadas desde Kali Linux se ejecutaron únicamente contra sistemas propios del laboratorio, nunca contra infraestructuras reales o de terceros.
 
 # 🎯 Objetivos del Proyecto
+
 Implementar una arquitectura de doble firewall con zona DMZ
 Segmentar la red interna mediante VLANs departamentales
 Desplegar un directorio activo corporativo con Samba AD
@@ -14,6 +16,7 @@ Implementar un SIEM centralizado con detección de malware
 Verificar la seguridad mediante pruebas de ataque controladas
 
 # 🛠️ Stack Tecnológico
+
 Componente	Tecnología	Versión
 Firewall	pfSense CE	2.8.1
 IDS/IPS	Suricata	Integrado en pfSense
@@ -24,6 +27,7 @@ Servidor web	Apache2	—
 Virtualización	VirtualBox	—
 
 # 🧱 Arquitectura de Red
+
 Zona	Rango IP	Dispositivos	Función
 WAN	192.168.1.0/24	FW-Externo, Kali Linux	Conexión exterior / atacante
 DMZ	172.16.10.0/24	Servidor web	Servicios expuestos al exterior
@@ -33,6 +37,7 @@ VLAN_Dev	10.10.40.0/24	Windows Cliente	Equipo de desarrollo
 VLAN_MGMT	10.10.99.0/24	Wazuh Server	Monitorización y gestión
 
 # 🔒 Reglas de Firewall — Política de Mínimo Privilegio
+
 Zona origen	Zona destino	Acceso	Justificación
 WAN	DMZ	HTTP / HTTPS	Acceso público al servidor web
 DMZ	Red interna	❌ Bloqueado	Aislamiento total de la DMZ
@@ -41,6 +46,7 @@ VLAN_Dev	VLAN_MGMT	❌ Bloqueado	Protección del SIEM
 VLAN_Dev	VLAN_Admin	✅ Permitido	Acceso a recursos de desarrollo
 
 # 🚨 Reglas Personalizadas de Suricata
+
 SID	Amenaza detectada	Técnica
 1000001	XSS	Patrón <script> en HTTP
 1000002	Command Injection	;whoami en HTTP
@@ -51,6 +57,7 @@ SID	Amenaza detectada	Técnica
 1000020	Netcat shell	nc -e en TCP
 
 # 📊 Resultados de las Pruebas de Seguridad
+
 Prueba	Herramienta	Resultado	Tiempo de bloqueo
 Escaneo de puertos	Nmap (SYN scan)	✅ Bloqueado por Suricata	< 5 segundos
 Ping masivo	Kali Linux	✅ Bloqueado por Suricata	< 10 segundos
